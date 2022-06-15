@@ -9,9 +9,10 @@ class Product {
   public $inventory_code;
   public $target_animal;
   public $price;
+  public $available = true;
 
 
-function __construct($_name, $_inventory_code, $_target_animal, $_price ) {
+function __construct($_name, $_inventory_code, $_target_animal, $_price) {
 
   $this->name = $_name;
   $this->inventory_code = $_inventory_code;
@@ -21,10 +22,5 @@ function __construct($_name, $_inventory_code, $_target_animal, $_price ) {
 public function printInfo() {
   return "$this->name $this->target_animal € $this->price";
 }
-
 }
-$products = [];
-$products[] = $toys;
-
-
 ?>
